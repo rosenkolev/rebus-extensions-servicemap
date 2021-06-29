@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Version>1.0.0</Version>
+    <Product>Rebus.Extensions.ServiceMap</Product>
+    <PackageId>Rebus.Extensions.ServiceMap</PackageId>
+    <Authors>Rosen Kolev</Authors>
+    <Description>A rebus extension for message to service map.</Description>
+    <RepositoryUrl>https://github.com/rosenkolev/rebus-extensions-servicemap</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>api,result,fluent,fluent-result,api result</PackageTags>
+    <PackageProjectUrl>https://github.com/rosenkolev/rebus-extensions-servicemap</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>result-icon-128.png</PackageIcon>
+    <Copyright>Copyright 2021 (c) Rosen Kolev</Copyright>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  <PropertyGroup Label="Code Analysis">
+    <AnalysisLevel>latest</AnalysisLevel>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)'=='Debug'">..\tools\analizers.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)'=='Release'">..\tools\analizers.disable.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup Label="NuGet Packages">
+    <PackageReference Include="Rebus.ServiceProvider" Version="6.4.1" />
+  </ItemGroup>
+  <ItemGroup Label="Projects and Files Reference">
+    <AdditionalFiles Include="..\tools\stylecop.json" />
+    <None Include="..\..\resources\icons\icon-128.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <ItemGroup Label="Code Analyzers">
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.*" PrivateAssets="All" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.22.0.*" PrivateAssets="All" />
+    <PackageReference Include="CodeCracker.CSharp" Version="1.1.*" PrivateAssets="All" />
+    <PackageReference Include="RefactoringEssentials" Version="5.6.*" PrivateAssets="All" />
+    <PackageReference Include="Menees.Analyzers" Version="3.0.*" PrivateAssets="All" />
+  </ItemGroup>
+</Project>
