@@ -3,6 +3,7 @@
 [![Nuget downloads](https://img.shields.io/nuget/v/rebus.extensions.servicemap.svg)](https://www.nuget.org/packages/Rebus.Extensions.ServiceMap/)
 [![Nuget](https://img.shields.io/nuget/dt/rebus.extensions.servicemap)](https://www.nuget.org/packages/Rebus.Extensions.ServiceMap/)
 [![Build status](https://github.com/rosenkolev/rebus-extensions-servicemap/actions/workflows/github-actions.yml/badge.svg)](https://github.com/rosenkolev/rebus-extensions-servicemap/actions/workflows/github-actions.yml)
+[![codecov](https://codecov.io/gh/rosenkolev/rebus-extensions-servicemap/branch/main/graph/badge.svg?token=C1DW0GQ0ZM)](https://codecov.io/gh/rosenkolev/rebus-extensions-servicemap)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/rosenkolev/rebus-extensions-servicemap/blob/main/LICENSE)
 
 **This are Rebus extensions for short Func map to a service class.**
