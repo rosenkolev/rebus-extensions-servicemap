@@ -2,7 +2,7 @@
   <PropertyGroup Label="Globals">
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Product>Rebus.Extensions.ServiceMap</Product>
     <PackageId>Rebus.Extensions.ServiceMap</PackageId>
     <Authors>Rosen Kolev</Authors>
@@ -27,7 +27,7 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)'=='Release'">..\tools\analizers.disable.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup Label="NuGet Packages">
-    <PackageReference Include="Rebus.ServiceProvider" Version="6.4.1" />
+    <PackageReference Include="Rebus.ServiceProvider" Version="7.0.*" />
   </ItemGroup>
   <ItemGroup Label="Projects and Files Reference">
     <AdditionalFiles Include="..\tools\stylecop.json" />
@@ -35,7 +35,7 @@
   </ItemGroup>
   <ItemGroup Label="Code Analyzers">
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.*" PrivateAssets="All" />
-    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.22.0.*" PrivateAssets="All" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.32.0.*" PrivateAssets="All" />
     <PackageReference Include="CodeCracker.CSharp" Version="1.1.*" PrivateAssets="All" />
     <PackageReference Include="RefactoringEssentials" Version="5.6.*" PrivateAssets="All" />
     <PackageReference Include="Menees.Analyzers" Version="3.0.*" PrivateAssets="All" />
