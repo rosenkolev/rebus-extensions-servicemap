@@ -29,6 +29,6 @@ namespace Rebus.Extensions.ServiceMap
             HandleAsync(message, Context.GetCancellationToken());
 
         /// <summary>Handles the request asynchronous.</summary>
-        protected abstract Task HandleAsync(TRequest message, CancellationToken cancelationToken);
+        protected abstract Task HandleAsync(TRequest message, CancellationToken cancellationToken);
     }
 }

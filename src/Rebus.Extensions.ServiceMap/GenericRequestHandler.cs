@@ -34,9 +34,9 @@ namespace Rebus.Extensions.ServiceMap
         protected Func<TService, TRequest, CancellationToken, Task<TResult>> Func { get; private set; }
 
         /// <inheritdoc/>
-        protected override async Task HandleAsync(TRequest message, CancellationToken cancelationToken)
+        protected override async Task HandleAsync(TRequest message, CancellationToken cancellationToken)
         {
-            var result = await Func(Service, message, cancelationToken);
+            var result = await Func(Service, message, cancellationToken);
             await Bus.Reply(result);
         }
     }
