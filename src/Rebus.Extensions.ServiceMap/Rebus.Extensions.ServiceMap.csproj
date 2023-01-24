@@ -2,7 +2,7 @@
   <PropertyGroup Label="Globals">
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Product>Rebus.Extensions.ServiceMap</Product>
     <PackageId>Rebus.Extensions.ServiceMap</PackageId>
     <Authors>Rosen Kolev</Authors>
@@ -27,7 +27,7 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)'=='Release'">..\tools\analizers.disable.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup Label="NuGet Packages">
-    <PackageReference Include="Rebus.ServiceProvider" Version="7.0.*" />
+    <PackageReference Include="Rebus.ServiceProvider" Version="8.4.*" />
   </ItemGroup>
   <ItemGroup Label="Projects and Files Reference">
     <AdditionalFiles Include="..\tools\stylecop.json" />
